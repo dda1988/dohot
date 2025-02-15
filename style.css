@@ -1,0 +1,537 @@
+/* ------------------------------------
+
+ * Typecho's Theme For DoHot 3.0
+
+ *
+
+ * @author  DDA
+
+ * @link  https: //dohot.net/
+
+ * @update  2024-12-11
+
+ * --------------------------------- */
+
+
+body {
+  background-color: #F5F5F5;
+  font-size: 0.795em;
+}
+a {
+  color: #36393D;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #CC0000;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: isolate;
+}
+
+
+#outmain {
+  margin: 0 auto;
+  max-width: 800px;
+  overflow: hidden;
+}
+#header {
+  padding: 15px;
+}
+#logo {
+  font-size: 1.5em;
+}
+
+
+#main {
+  background-color: #FFF;
+  padding: 30px;
+}
+.post {
+  margin-bottom:25px;
+  border-bottom: 1px solid #999;
+  padding-bottom:12px;
+}
+.home-post-title {
+  font-size: 1.37em;
+  float: left;
+  width: 70%;
+  margin: 10px 0px;
+  letter-spacing: 0.15em;
+}
+.home-post-meta {
+  font-family: monospace;
+  float: right;
+  width: 20%;
+  text-align: center;
+  margin: 18px 0px;
+  color: #999;
+}
+.home-post-meta li {
+  display: block;
+  font-size: 0.625em;
+}
+.post-title {
+  font-size: 1.37em;
+  text-align: center;
+  margin: 10px 0px;
+  letter-spacing: 0.15em;
+}
+.post-meta {
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+  font-size: .92857em;
+  text-align: center;
+  border-bottom: 1px solid #999;
+}
+.post-meta li {
+  display: inline-block;
+  margin: 0;
+}
+.post-meta li a {
+  font-weight: bold;
+}
+.post-meta li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border: none;
+}
+.post-meta li a {
+  border: none;
+}
+.post-content {
+  font-size: 1.2em;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  clear: both;
+}
+.post-content p {
+text-indent: 2rem;
+}
+.post-content a {
+  border-bottom: 1px solid #3F4C6B;
+}
+.post img {
+  height: auto;
+  object-fit: contain;
+  display: block; 
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+.post .tags {
+  clear: both;
+}
+.post-near {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  color: #999;
+}
+.post-near li {
+  margin: 10px 0;
+}
+
+.archive-title {
+  font-size: 1em;
+  padding: 8px 0px;
+  font-weight: 700;
+}
+.more {
+  text-align: center;
+}
+
+.more a {
+  border: none;
+}
+
+/*
+.protected .text {
+  width: 50%;
+}
+*/
+
+
+/* Page nav */
+
+.page-navigator {
+  list-style: none;
+  margin: 25px 0;
+  padding: 0;
+}
+
+.page-navigator li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.page-navigator a {
+  display: inline-block;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.page-navigator a:hover {
+  background: #EEE;
+  text-decoration: none;
+}
+.page-navigator .current a {
+  color: #444;
+  background: #EEE;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------
+
+ * Footer 
+
+ * --------------- */
+
+#footer {
+  padding: 15px;
+  margin: 10px 0px;
+  font-size: 0.62em;
+  color: #777;
+}
+#footer nav a {
+  margin-right:8px;
+}
+
+
+
+pre, code { 
+  background: #000;
+  font-size: 1.02em;
+}
+code { padding: 2px 4px; color:  #FFF; }
+pre {
+  padding: 8px;
+  overflow: auto;
+  max-height: 400px;
+}
+pre code {
+  padding: 3px;
+  color: FFF;
+}
+blockquote {
+  margin: 1em 0;
+  padding-left: 1.5em;
+  border-left: 5px solid #C3D9FF;
+  color: #444;
+  background: #F9F7ED;
+}
+table {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 5px 10px;
+  border: 1px solid #eee;
+}
+table th {
+  background: #f3f3f3;
+}
+
+
+
+
+
+/* -----------------
+
+ * Error page
+
+ * -------------- */
+
+.error-page {
+
+  margin-top: 100px;
+
+  margin-bottom: 100px;
+
+}
+
+
+
+
+
+/* -----------------
+
+ * Content format
+
+ *--------------- */
+
+
+.post-content h2, .comment-content h2 {
+  font-size: 1.28571em;
+}
+.post-content img, .comment-content img,
+.post-content video, .comment-content video {
+  max-width: 100%;
+}
+
+.post-content a img,
+.comment-content a img {
+  background: #FFF;
+  position: relative;
+  bottom: -4px;  /* hidden img parent link border  */
+}
+.post-content hr, .comment-content hr {
+  margin: 2em auto;
+  width: 100px;
+  border: 1px solid #E9E9E9;
+  border-width: 2px 0 0 0;
+}
+
+
+
+
+
+/* -----------------
+
+ * Misc
+
+ *--------------- */
+
+.aligncenter, div.aligncenter {
+
+  display: block;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+.alignleft {
+
+  float: left;
+
+}
+
+.alignright {
+
+  float: right;
+
+}
+
+img.alignleft {
+
+  margin: 0 15px 0 0;
+
+}
+
+img.alignright {
+
+  margin: 0 0 0 15px;
+
+}
+
+
+
+
+
+
+
+
+/*
+
+* Hide from both screenreaders and browsers: h5bp.com/u
+
+*/
+
+.hidden {
+
+  display: none !important;
+
+  visibility: hidden; }
+
+
+
+/*
+
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+
+*/
+
+.sr-only {
+
+  border: 0;
+
+  height: 1px;
+
+  margin: -1px;
+
+  overflow: hidden;
+
+  padding: 0;
+
+  position: absolute;
+
+  width: 1px; }
+
+
+
+/*
+
+* Extends the .sr-only class to allow the element to be focusable
+
+* when navigated to via the keyboard: h5bp.com/p
+
+*/
+
+.sr-only.focusable:active,
+
+.sr-only.focusable:focus {
+
+  clip: auto;
+
+  height: auto;
+
+  margin: 0;
+
+  overflow: visible;
+
+  position: static;
+
+  width: auto; }
+
+
+
+/*
+
+* Hide visually and from screenreaders, but maintain layout
+
+*/
+
+.invisible {
+
+  visibility: hidden; }
+
+
+
+
+/* ------------------
+
+ * Comment list
+
+ * --------------- */
+
+/*
+#comments {
+  padding-top: 15px;
+}
+#comments h3 {
+  padding: 8px 0px 10px 15px;
+  font-size: 0.9em;
+}
+.comment-list, .comment-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.comment-list li {
+  padding: 14px;
+  margin-top: 10px;
+  border-bottom: 1px solid #777;
+}
+.comment-list li.comment-level-odd {
+  background: #F6F6F3;
+}
+.comment-list li.comment-level-even {
+  background: #FFF;
+}
+.comment-list li.comment-by-author {
+  background: #FFF9E8;
+}
+.comment-list li .comment-reply {
+  text-align: right;
+  font-size: .92857em;
+}
+.comment-meta a {
+  color: #999;
+  font-size: .92857em;
+}
+.comment-author {
+  display: block;
+  margin-bottom: 3px;
+  color: #444;
+}
+.comment-author .avatar {
+  float: left;
+  margin-right: 10px;
+}
+.comment-author cite {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Comment reply */
+.comment-list .respond {
+  margin-top: 15px;
+  border-top: 1px solid #EEE;
+}
+
+.respond .cancel-comment-reply {
+  float: right;
+  margin-top: 15px;
+  font-size: .92857em;
+}
+#comment-form label {
+  display: block;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+#comment-form .required:after {
+  content: " *";
+  color: #C00;
+}
+*/
+
+
+
+
+
+
+
+/*
+
+input[type="text"],
+
+input[type="email"],
+
+input[type="url"],
+
+input[type="password"],
+
+textarea {
+  padding: 5px;
+  border: 1px solid #E9E9E9;
+  width: 100%;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+textarea {
+  resize: vertical;
+}
+*/
